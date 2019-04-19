@@ -15,28 +15,12 @@ movies = [
     {'title': 'King of Comedy', 'year': '1999'},
     {'title': 'Devils on the Doorstep', 'year': '1999'},
     {'title': 'WALL-E', 'year': '2008'},
-
+    {'title': 'The Pork of Music', 'year': '2012'},
 ]
 
 @app.route('/')
 def index():
     return render_template('index.html', name=name, movies=movies)
-# @app.route('/')
-# @app.route('/index')
-# @app.route('/home')
-# def hello_world():
-#    return '<h1>Hello YiLin!</h1><img src="http://helloflask.com/totoro.gif">'
-
-
-# @app.route('/user/<name>')
-# def user_page(name):
-#     return 'User %s' % name
-
-
-# @app.route('/test')
-# def test_url_for():
-#     return 'Test page'
-
 
 if __name__ == '__main__':
     app.run()
